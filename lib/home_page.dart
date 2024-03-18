@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
         width: double.infinity,
         height: double.infinity,
         child: Container(
-          color: Color.fromRGBO(222, 42, 93, 1),
+          color: Color.fromRGBO(0, 0, 0, 1),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
               Container(
                 width: 130,
                 height: 170,
-                color: Color.fromARGB(255, 124, 18, 82),
+                color: Color.fromARGB(255, 0, 0, 0),
                 child: Row(
                   children: [
                     Column(children: [
