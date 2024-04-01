@@ -16,26 +16,35 @@ class HomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-                width: 300,
+                width: 400,
                 height: 170,
                 color: Color.fromRGBO(208, 40, 110, 1),
                 child: Row(
                   children: [
                     Column(children: [
                       const SizedBox(
-                        width: 5,
-                        height: 10,
+                        width: 60,
+                        height: 60,
                       ),
                       Container(
-                        width: 200,
+                        width: 400,
                         height: 50,
-                        color: Color.fromRGBO(208, 40, 110, 1),
-                        child: const Text(
-                          'TINDER',
-                          style: TextStyle(
-                            fontSize: 40,
-                            color: Colors.white,
-                          ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              'imagens/tinderfun2.png',
+                              width: 40,
+                              height: 40,
+                            ),
+                            SizedBox(width: 1),
+                            Image.asset(
+                              'imagens/tindernome.png',
+                              width: 150,
+                              height: 60,
+                            )
+                          ],
                         ),
                       ),
                     ]),
@@ -89,20 +98,27 @@ class HomePage extends StatelessWidget {
                   Container(
                     width: 400,
                     height: 50,
-                    decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 248, 248, 248),
-                        borderRadius: BorderRadius.circular(30)),
                     child: Container(
                       width: 100,
                       height: 30,
                       decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white, width: 2),
                           color: Color.fromRGBO(208, 40, 110, 1),
                           borderRadius: BorderRadius.circular(30)),
-                      child: const Center(
-                        child: Text(
-                          ' SIGN IN APPLE',
-                          style: TextStyle(fontSize: 16, color: Colors.white),
-                        ),
+                      child: Row(
+                        children: [
+                          Image.asset(
+                            //logo apple
+                            'imagens/apple.png',
+                            width: 30,
+                            height: 40,
+                          ),
+                          SizedBox(width: 70),
+                          Text(
+                            'SIGN IN WITH APPLE',
+                            style: TextStyle(fontSize: 15, color: Colors.white),
+                          )
+                        ],
                       ),
                     ),
                   ),
@@ -112,20 +128,27 @@ class HomePage extends StatelessWidget {
                   Container(
                     width: 400,
                     height: 50,
-                    decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 248, 248, 248),
-                        borderRadius: BorderRadius.circular(30)),
                     child: Container(
                       width: 100,
                       height: 30,
                       decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white, width: 2),
                           color: Color.fromRGBO(208, 40, 110, 1),
                           borderRadius: BorderRadius.circular(30)),
-                      child: const Center(
-                        child: Text(
-                          ' SIGN IN WITH FACEBOOK',
-                          style: TextStyle(fontSize: 16, color: Colors.white),
-                        ),
+                      child: Row(
+                        children: [
+                          Image.asset(
+                            //logo facebook
+                            'imagens/facebook.png',
+                            width: 30,
+                            height: 40,
+                          ),
+                          SizedBox(width: 70),
+                          Text(
+                            'SIGN IN WITH FACEBOOK',
+                            style: TextStyle(fontSize: 15, color: Colors.white),
+                          )
+                        ],
                       ),
                     ),
                   ),
@@ -135,20 +158,27 @@ class HomePage extends StatelessWidget {
                   Container(
                     width: 400,
                     height: 50,
-                    decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 248, 248, 248),
-                        borderRadius: BorderRadius.circular(30)),
                     child: Container(
                       width: 100,
                       height: 30,
                       decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white, width: 2),
                           color: Color.fromRGBO(208, 40, 110, 1),
                           borderRadius: BorderRadius.circular(30)),
-                      child: const Center(
-                        child: Text(
-                          ' SIGN IN WITH PHONE NUMBER',
-                          style: TextStyle(fontSize: 16, color: Colors.white),
-                        ),
+                      child: Row(
+                        children: [
+                          Image.asset(
+                            //logo mensagem
+                            'imagens/mensagem.png',
+                            width: 30,
+                            height: 40,
+                          ),
+                          SizedBox(width: 70),
+                          Text(
+                            'SIGN IN WITH PHONE NUMBER',
+                            style: TextStyle(fontSize: 15, color: Colors.white),
+                          )
+                        ],
                       ),
                     ),
                   ),
