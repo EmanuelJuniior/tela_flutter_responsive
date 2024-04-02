@@ -10,117 +10,131 @@ class HomePage extends StatelessWidget {
         width: double.infinity,
         height: double.infinity,
         child: Container(
-          color: Color.fromRGBO(208, 40, 110, 1),
+          color: Color.fromRGBO(0, 0, 0, 1),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-                width: 400,
+                width: 130,
                 height: 170,
-                color: Color.fromRGBO(208, 40, 110, 1),
+                color: Color.fromARGB(255, 0, 0, 0),
                 child: Row(
                   children: [
                     Column(children: [
                       const SizedBox(
-                        width: 60,
-                        height: 60,
+                        width: 5,
+                        height: 20,
                       ),
                       Container(
-                        width: 400,
-                        height: 50,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Image.asset(
-                              'imagens/tinderfun2.png',
-                              width: 40,
-                              height: 40,
-                            ),
-                            SizedBox(width: 1),
-                            Image.asset(
-                              'imagens/tindernome.png',
-                              width: 150,
-                              height: 60,
-                            )
-                          ],
+                        //circulo
+                        width: 60,
+                        height: 60,
+
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Color.fromARGB(255, 62, 0, 161),
                         ),
                       ),
+                      const SizedBox(
+                        width: 5,
+                        height: 5,
+                      ),
+                      Container(
+                        width: 60,
+                        height: 60,
+                        decoration: const BoxDecoration(
+                            color: Color.fromARGB(255, 62, 0, 161),
+                            borderRadius: BorderRadius.only(
+                                bottomLeft: Radius.circular(80))),
+                      ),
                     ]),
+                    const SizedBox(
+                      width: 5,
+                    ),
+                    Container(
+                      //container maior
+                      width: 60,
+                      height: 140,
+                      decoration: const BoxDecoration(
+                          color: Color.fromARGB(255, 62, 0, 161),
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(130),
+                            bottomLeft: Radius.circular(130),
+                          )),
+                    )
                   ],
                 ),
               ),
-              SizedBox(
-                height: 30,
-              ),
               Container(
-                width: 370,
-                height: 20,
-                color: Color.fromRGBO(208, 40, 110, 1),
+                width: 230,
+                height: 40,
+                color: const Color.fromARGB(255, 0, 0, 0),
                 child: const Text(
-                  'By tapping Create Account or Sign In, you agree to our',
+                  'Get your Money',
                   style: TextStyle(
-                    fontSize: 15,
+                    fontSize: 30,
                     color: Colors.white,
                   ),
                 ),
               ),
               Container(
-                width: 370,
-                height: 20,
-                color: Color.fromRGBO(208, 40, 110, 1),
+                width: 200,
+                height: 40,
+                color: const Color.fromARGB(255, 0, 0, 0),
                 child: const Text(
-                  'Terms. Learn how we process your data in your Privacy',
+                  'Under Control',
                   style: TextStyle(
-                    fontSize: 15,
-                    color: Color.fromARGB(255, 255, 255, 255),
+                    fontSize: 30,
+                    color: Colors.white,
                   ),
                 ),
               ),
               Container(
                 width: 170,
                 height: 20,
-                color: Color.fromRGBO(208, 40, 110, 1),
+                color: const Color.fromARGB(255, 0, 0, 0),
                 child: const Text(
-                  'policy and Cookies Policy',
+                  'Manage your expenses',
                   style: TextStyle(
                     fontSize: 15,
-                    color: Color.fromARGB(255, 255, 255, 255),
+                    color: Color.fromARGB(255, 70, 67, 67),
+                  ),
+                ),
+              ),
+              Container(
+                width: 100,
+                height: 20,
+                color: const Color.fromARGB(255, 0, 0, 0),
+                child: const Text(
+                  'Seamlessly',
+                  style: TextStyle(
+                    fontSize: 15,
+                    color: Color.fromARGB(255, 70, 67, 67),
                   ),
                 ),
               ),
               const SizedBox(
-                height: 50,
+                height: 250,
               ),
               Column(
                 children: [
                   Container(
                     width: 400,
                     height: 50,
-                    child: Container(
-                      width: 100,
-                      height: 30,
-                      decoration: BoxDecoration(
-                          border: Border.all(color: Colors.white, width: 2),
-                          color: Color.fromRGBO(208, 40, 110, 1),
-                          borderRadius: BorderRadius.circular(30)),
-                      child: Row(
-                        children: [
-                          Image.asset(
-                            //logo apple
-                            'imagens/apple.png',
-                            width: 30,
-                            height: 40,
-                          ),
-                          SizedBox(width: 70),
-                          Text(
-                            'SIGN IN WITH APPLE',
-                            style: TextStyle(fontSize: 15, color: Colors.white),
-                          )
-                        ],
-                      ),
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 62, 32, 194),
+                      borderRadius: BorderRadius.circular(30),
                     ),
+                    child: const Center(
+                        child: Text(
+                      'Sign Up with Email ID',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                      ),
+                      textAlign: TextAlign.center,
+                    )),
                   ),
                   const SizedBox(
                     height: 5,
@@ -128,73 +142,33 @@ class HomePage extends StatelessWidget {
                   Container(
                     width: 400,
                     height: 50,
-                    child: Container(
-                      width: 100,
-                      height: 30,
-                      decoration: BoxDecoration(
-                          border: Border.all(color: Colors.white, width: 2),
-                          color: Color.fromRGBO(208, 40, 110, 1),
-                          borderRadius: BorderRadius.circular(30)),
-                      child: Row(
-                        children: [
-                          Image.asset(
-                            //logo facebook
-                            'imagens/facebook.png',
-                            width: 30,
-                            height: 40,
-                          ),
-                          SizedBox(width: 70),
-                          Text(
-                            'SIGN IN WITH FACEBOOK',
-                            style: TextStyle(fontSize: 15, color: Colors.white),
-                          )
-                        ],
-                      ),
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 255, 255, 255),
+                      borderRadius: BorderRadius.circular(30),
                     ),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  Container(
-                    width: 400,
-                    height: 50,
-                    child: Container(
-                      width: 100,
-                      height: 30,
-                      decoration: BoxDecoration(
-                          border: Border.all(color: Colors.white, width: 2),
-                          color: Color.fromRGBO(208, 40, 110, 1),
-                          borderRadius: BorderRadius.circular(30)),
-                      child: Row(
-                        children: [
-                          Image.asset(
-                            //logo mensagem
-                            'imagens/mensagem.png',
-                            width: 30,
-                            height: 40,
-                          ),
-                          SizedBox(width: 70),
-                          Text(
-                            'SIGN IN WITH PHONE NUMBER',
-                            style: TextStyle(fontSize: 15, color: Colors.white),
-                          )
-                        ],
+                    child: const Center(
+                        child: Text(
+                      'Sign Up with Google',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Color.fromARGB(255, 0, 0, 0),
                       ),
-                    ),
+                      textAlign: TextAlign.center,
+                    )),
                   ),
                 ],
               ),
               const SizedBox(
-                height: 6,
+                height: 60,
               ),
               Column(
                 children: [
                   Container(
                     width: 300,
                     height: 50,
-                    color: Color.fromRGBO(208, 40, 110, 1),
+                    color: const Color.fromARGB(255, 0, 0, 0),
                     child: const Text(
-                      'Trouble Signing In?',
+                      'Already have an account? Sign in',
                       style: TextStyle(
                         fontSize: 13,
                         color: Colors.white,
